@@ -1,0 +1,2 @@
+$=[],t=0,draw=_=>{t++||createCanvas(540,540);background(0,9);$=[...$.slice(-5e3),...[...'#つぶやきProcessing'].map(p5.Vector.random3D)];$.map(v=>stroke(255,96).point((v.x+=sin((r=9*((v.x*(k=v.x+5+v.y)^v.y*k+t/90)&7)-.1
+)*v.y)/119)*119+270,(v.y+=cos(v.x*r)/119)*119+270))}
